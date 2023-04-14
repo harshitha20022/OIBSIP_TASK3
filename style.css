@@ -1,0 +1,107 @@
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 85vh;
+    background-color: white;
+    background-image: url(pics/snow.gif), url(pics/sun.gif);
+    background-position: right bottom, left bottom;
+    
+    background-repeat: no-repeat, no-repeat;
+    background-size: 400px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+   
+
+.text-center{
+    font-family: serif;
+    
+}
+
+form{
+    background-color: #D7BDE2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    border-radius: 10px;
+}
+
+#tempCalc label{
+    font-size: 30px;
+}
+
+[type="submit"]{
+    height: 35px;
+    margin: 20px;
+    width: 100px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #34495E  ;
+    color: white;
+    position: relative;
+    left: 250px;
+    
+} 
+[type="textbox"]{
+    width:600px;
+    margin: 30px 0 10px;
+    padding: 7px;
+    font-size: 20px;
+    
+}
+input {
+    margin: 30px 0 10px;
+    padding: 7px;
+    font-size: 20px;
+  }
+select{
+    margin: 30px 0 10px;
+    padding: 7px;
+    font-size: 20px;
+    
+  }
+
+.col {
+    float: left;
+    width: 350px;
+    height: auto;
+}
+
+  
+ 
+  @media screen and (max-width: 1000px){
+    label{
+      font-size: 35px;
+    }
+    form{
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        
+    }
+    [type=submit]{
+        position: relative;
+        left: 70px;
+    }
+    [type=textbox]{
+        width: 250px;
+    }
+    body{
+        background-position: center bottom, center center;
+        background-size: 200px;
+    }
+  }
+  
+  
