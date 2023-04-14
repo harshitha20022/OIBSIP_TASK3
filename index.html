@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temperature">
+    <meta name="keywords" content="temperature converter, convert celsius to fahrenheit, convert fahrenheit to celsius">
+    <link rel="shortcut icon" href="pics/fav.png" type="picture">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <h1 class="text-center">🌡️ Temperature Converter</h1>
+    <form class="text-center" id="tempCalc" onsubmit="calculateTemp(); return false">
+        <label class="text-center" for="temp">Enter the Temperature to convert:</label>
+        <div class="row my-3">
+            <div class="col">
+                <input type="number" id="temp" class="text-center" placeholder="Input Here">
+                
+            </div>
+            <div class="col">
+                <select name="temp_diff" class="text-center" id="temp_diff">
+                    <option class="text-center" value="cel"><span>&#176;</span>Celsius</option>
+                    <option class="text-center" value="fah"><span>&#176;</span>Fahrenheit</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="text-center">Submit</button>
+        <label class="text-center" for="temp">Converted Temperature:</label>
+        <input class="text-center" type="textbox" name="display" placeholder="Output Here">
+    </form>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
